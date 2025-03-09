@@ -1,0 +1,23 @@
+.container{
+    justify-self: center;
+    width: 1000px;
+    height: 1000px;
+    background-image : url(../images/image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-content: center;
+    color: bisque;
+}
+
+.space{
+    height: 300px;
+}
+p{
+
+    display: block;
+}
+.div2{
+    justify-self: center;
+    text-align: center;
+    width: 600px;
+}

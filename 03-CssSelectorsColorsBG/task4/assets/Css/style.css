@@ -1,0 +1,20 @@
+body {
+    background-image : url(../images/akula.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+p{
+
+    border-radius: 3%;
+    border-style: groove;
+    border-width: 1px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+.container {
+    justify-self: center;
+    align-content: center;
+    height: 100vh; 
+    width: 400px;
+}
