@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(255, 115, 0);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+}
+.rdr{
+    margin-top: 60px;
+}
+.body{
+    background-color: rgb(255, 170, 0);
+    height: 200px;
+    display: flex;
+}
+.footer{
+    width: 23%;
+    height: 150px;
+    background-color: royalblue;
+    border: 3px solid black;
+}
+.dfd{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+.fdf{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
