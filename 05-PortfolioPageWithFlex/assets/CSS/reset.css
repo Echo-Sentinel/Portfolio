@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pinyon+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 1.6rem;
+    font-weight: 450;
+    color: var(--main-text-color);
+    font-family: var(--main-text-family);
+}
+
+:root{
+    --main-text-color: #fffefe;
+    --main-text-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 132rem;
+    margin: 0 auto;
+}
