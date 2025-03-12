@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+aside{
+    width: 250px;
+}
+.search_container {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.search_container :hover {
+  background-color: aliceblue;
+  border: 0.5px solid black;
+}
+.all-categories {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.categories p {
+  margin-top: 10px;
+}
+.categories {
+  margin-top: 10px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.categories p:hover {
+  color: brown;
+}
+h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.branding {
+  margin-top: 10px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.branding p {
+  margin-top: 10px;
+}
+.branding p:hover {
+  color: brown;
+}
+.FP {
+  margin-top: 10px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.FP p {
+  margin-top: 10px;
+}
+.FP p:hover {
+  color: brown;
+}
+.size {
+  margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+.color1{
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color2{
+    background-color: #20315F;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color3{
+    background-color: #F1AF4D;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color4{
+    background-color: #636068;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color5{
+    background-color: #57594D;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color6{
+    background-color: #E8BAC4;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color7{
+    background-color: #D6C1D7;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color8{
+    background-color: #ED1C24;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.color9{
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+}
+.columb1{
+    display: flex;
+    gap: 9px;
+    margin:10px 0px;
+    
+}
+.columb1>div:hover, .columb2>div:hover{
+    border:solid yellow 2px;
+}
+.columb2{
+    display: flex;
+    gap: 9px;
+}
+main{
+    display: inline-block;
+}
+.cards{
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+    margin-left: 80px;
+}
+.card{
+    width: 200px;
+}
+img{
+    width: 150px;
+    height: 200px;
+}
+.card-info{
+    margin-bottom: 30px;
+    font-size: small;
+}
