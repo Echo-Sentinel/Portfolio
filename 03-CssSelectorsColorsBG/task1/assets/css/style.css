@@ -1,79 +1,130 @@
+/* 1.Selects all elements.*/
+
 * {
     font-weight: 600;
+}
+
+/* 2.Selects all li-elements.*/
+
+li {
+    font-size: 32px;
+}
+
+/* 3.Selects element with "list-item-1" id .*/
+
+#list-item-1 {
+    font-weight: 100;
+}
+
+/* 4.Selects all elements with "list-item-1" class */
+
+.list-item-1 {
+    font-weight: 400;
+}
+
+/* 5.Selects all li-elements in ul-elements */
+
+ul>li {
+    background-color: green;
+}
+
+/* 6. Creates and changes content before div with the "before-after-div" class */
+
+.before-after-div::before {
+    content: url('https://picsum.photos/200/300');
+}
+
+/* 7. Creates and changes content after div with the "before-after-div" class */
+
+.before-after-div::after {
+    content: url('https://picsum.photos/id/237/200/300');
+}
+
+/* 8.This pseudo-class changes <div> with class "div-hover" properties when on hover */
+
+.div-hover:hover {
+    background-color: grey;
+}
+
+/* 9. This pseudo-class matches any <p> element that is the first child of any element */
+
+p:first-child {
+    color: blue;
+}
+
+/* 10. This pseudo-class matches any <p> element that is the last child of any element */
+
+p:last-child {
+    color:green;
+}
+
+/* 11.This pseudo-element formats the first line of the text in all <p> elements */
+
+p::first-line {
+    color: #ff0000;
+  font-variant: small-caps;
+}
+
+/* 12. The ::marker pseudo-element selects the markers of list items */
+
+::marker {
+    color: red;
+    font-size: 23px;
   }
-  
-  li {
-      font-size: 32px;
-  }
-  
-  #list-item-1 {
-      font-weight: 100;
-  }
-  
-  .list-item-1 {
-      font-weight: 400;
-  }
-  
-  .list-item {
-      color: cornflowerblue;
-  }
-  
-  ol {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
-  
-  ul>li {
-      background-color: green;
-  }
-  
-  center {
-      background-color: blue;
-  }
-  
-  table {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .th1 {
-      color: aqua;
-  }
-  
-  .th1>u {
-      font-size: 20px;
-  }
-  
-  .th2 {
-      color: brown;
-  }
-  
-  .th2>u {
-      font-size: 24px;
-  }
-  
-  #th1 {
-      color: purple;
-  }
-  
-  p {
-      display: block;
-  }
-  
-  .container {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  span {
-      font-size: 32px;
-  }
-  
-  div>span {
-      background-color: indigo;
-  }
-  
-  div>.text {
-      background-color: gold;
-  }
-  
-  div>center {
-      background-color: seagreen;
-  }
+
+/* 13. The ::selection pseudo-element matches the portion of an element that is selected by a user */
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+/* 14. Styles the elements when the user focus on any particular element */
+
+input:focus {
+    outline: 3px solid red;
+}
+
+/* 15. Styles the first-letter of a word or a sentence */
+
+p::first-letter {
+    color: red;
+    font-size: 23px;
+}
+
+/* 16. Styles the placeholder of a specific input field. */
+
+input::placeholder {
+    font-size: 20x;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+/* 17. Styles all siblings that follow a specific element */
+
+div~p {
+    font-style: italic;
+}
+
+/* 18. Targets an element inside another */
+
+div center {
+    color: deepskyblue;
+}
+
+/* 19. Selects unvisited link */
+
+a:link {
+    color: #FF0000;
+}
+
+/* 20. Selects visited link */
+
+a:visited {
+    color: #00FF00;
+}
+
+/* 21. Selects selected link */
+
+a:active {
+    color: #0000FF;
+}
