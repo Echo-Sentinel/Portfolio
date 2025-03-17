@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  height: 50px;
+  width: 100%;
+  .navarea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .lnav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      cursor: pointer;
+      .has {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+      }
+      .has p {
+        color: #56574e;
+      }
+    }
+    .rnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 70px;
+      height: 20px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .rnav:hover {
+      background-color: black;
+      color: white;
+    }
+    .burger {
+      display: none;
+    }
+    @media (max-width: 972px) {
+      .burger {
+        display: block;
+      }
+      .rnav {
+        display: none;
+      }
+    }
+  }
+}
+#hello {
+  width: 100%;
+  height: 250px;
+  background-color: #212529;
+  .sis {
+    height: 100%;
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 15px;
+    color: #909283;
+  }
+}
+#body {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  .cards {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 270px;
+    .image {
+      width: 100%;
+      height: 125px;
+    }
+    .cardcont {
+      width: 100%;
+      height: 125px;
+      text-align: center;
+      
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .star {
+        font-size: 10px;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+        cursor: pointer;
+        margin-left: 65px;
+      }
+      .button:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+#foot {
+  height: 100px;
+  background-color: #212529;
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
