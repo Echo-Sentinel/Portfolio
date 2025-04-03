@@ -27,16 +27,20 @@
 // console.log("Armstrong ededleri 1000 qeder:", numbers);
 
 // task2
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// console.log('Vurma Cədvəli (1-10):');
-// numbers.forEach(firstNumber => {
-//   let row = '';
-//   numbers.forEach(secondNumber => {
-//     row += `${firstNumber}x${secondNumber}=${(firstNumber*secondNumber).toString().padStart(2)} `;
-//   });
-//   console.log(row);
-// });
+console.log('Vurma Cədvəli (1-10):');
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+
+numbers.forEach(function (firstNumber) {
+  let row = ''; 
+
+  numbers.forEach(function (secondNumber) {
+    row += firstNumber + 'x' + secondNumber + '=' + (firstNumber * secondNumber).toString().padStart(2) + ' ';
+  });
+
+  console.log(row);
+});
 
 // task3
 // let arr = [203, 19, 2, 13, 196, 86, 35, 77];
@@ -85,13 +89,14 @@
 
 // let bolen = prompt("Mod almaq üçün bölən ədədi daxil edin:");
 
-// if (!isNaN(bolen) && bolen !== 0) {
-//   console.log(`${bolen} ədədinə görə mod nəticələri:`);
-  
-//   arr.forEach(eded => {
+// if (!isNaN(bolen) && bolen != 0) { // bolen !== 0 заменено на bolen != 0, т.к. prompt возвращает строку
+//   console.log(bolen + " ədədinə görə mod nəticələri:");
+
+//   arr.forEach(function (eded) {
 //     let mod = eded % bolen;
-//     console.log(`${eded} % ${bolen} = ${mod}`);
+//     console.log(eded + " % " + bolen + " = " + mod);
 //   });
+
 // } else {
 //   console.log("Xəta: Yalnız sıfırdan fərqli ədəd daxil edə bilərsiniz!");
 // }
