@@ -197,7 +197,7 @@
 // console.log("Bütün hobbilər:", allHobbies);
 
 // task12
-// 1. Random eded
+// 1. Random arr
 // const arr = [];
 // for (let i = 0; i < 10; i++) {
 //   arr.push(Math.floor(Math.random() * 100) + 1); // 1-100 arası random ədəd
@@ -206,11 +206,11 @@
 
 // // 2. en boyuk element
 // const max = Math.max.apply(null, arr);
-// console.log("Ən böyük:", max);
+// console.log("En boyuk:", max);
 
 // // 3. en kicik element
 // const min = Math.min.apply(null, arr);
-// console.log("Ən kiçik:", min);
+// console.log("En kicik:", min);
 
 // // 4. toplama 
 // let sum = 0;
