@@ -29,7 +29,7 @@
 //   deleteBtn.innerHTML = "\u00d7";
 
 //   const editBtn = document.createElement("span");
-//   editBtn.innerHTML = "✏️";
+//   editBtn.innerHTML = "...";
 //   editBtn.style.right = "40px"; 
 
 //   li.appendChild(editBtn);
@@ -85,7 +85,7 @@
 //     const deleteBtn = document.createElement("span");
 //     deleteBtn.innerHTML = "\u00d7";
 //     const editBtn = document.createElement("span");
-//     editBtn.innerHTML = "✏️";
+//     editBtn.innerHTML = "...";
 //     editBtn.style.right = "50px";
 //     task.appendChild(editBtn);
 //     task.appendChild(deleteBtn);
@@ -133,12 +133,16 @@
 // });
 
 // task2
+function isNumber(val) {
+  return typeof val === 'number' && val === val;
+}
+
 function calculate(operation) {
   const num1 = parseFloat(document.getElementById('num1').value);
   const num2 = parseFloat(document.getElementById('num2').value);
   let result = '';
 
-  if (isNaN(num1) || isNaN(num2)) {
+  if (!isNumber(num1) || !isNumber(num2)) {
     result = 'Xeta';
   } else {
     const operations = {
@@ -151,9 +155,7 @@ function calculate(operation) {
     const handler = operations[operation];
 
     if (handler) {
-      const resultElement = document.createElement('span');
-      resultElement.textContent = handler();
-      result = resultElement.textContent;
+      result = handler();
     } else {
       result = 'Yalnis operasiya';
     }
@@ -161,3 +163,13 @@ function calculate(operation) {
 
   document.getElementById('result').value = result;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('button[data-op]');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const operation = button.getAttribute('data-op');
+      calculate(operation);
+    });
+  });
+});
