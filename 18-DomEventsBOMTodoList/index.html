@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- commentelemde problem var 112-115 setirde commentden ilk seferden acanda error vererse o setire baxin  -->
+</head>
+<body>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins',sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg,#153677, #4e085f);
+            padding: 10px;
+    
+        }
+        .todo-app{
+            width: 100%;
+            max-width: 540px;
+            background: #fff;
+            margin: 100px auto 20px;
+            padding: 40px 30px 70px;
+            border-radius: 10px;
+        }
+        .todo-app h2{
+            color: #002765;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 8px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #edeef0;
+            border-radius: 40px;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 10px;
+            font-size: 17px;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 16px 50px;
+            background: #ff5945;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+        ul li{
+            list-style: none;
+            font-size: 17px;
+            padding: 12px 8px 12px 50px;
+            cursor: pointer;
+            position: relative;
+        }
+        ul li::before{
+            content:'';
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background-image: url(./assets/images/circle_circular_blank_check-256.webp);
+            background-size: cover;
+            background-position: center;
+            top: 8px;
+            left: 15px;
+        }
+       ul li.checked{
+        color:#555;
+       }
+       ul li.checked::before{
+        background-image: url(./assets/images/Yes_Check_Circle_Orange.svg.png);
+       }
+       span{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: #ff5945;
+        font-size: 30px;
+        cursor: pointer;
+       }
+       span:hover{
+        color: #000;
+       }
+    </style>
+    
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <i class="fa-solid fa-list"></i></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text ...">
+                <button class="btn">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            <!-- </ul>
+        </div>
+    </div> --> 
+
+<!-- task2 -->
+    <div class="calculator">
+        <div class="inputs">
+          <input id="num1" type="number" placeholder="Reqem 1">
+          <input id="num2" type="number" placeholder="Reqem 2">
+        </div>
+        <input id="result" placeholder="Netice" readonly>
+        <div class="buttons">
+          <button data-op="add">Add</button>
+          <button data-op="sub">Minus</button>
+          <button data-op="mul">Mult</button>
+          <button data-op="div">Div</button>
+        </div>
+    </div>
+      <style>
+        body {
+          background: cadetblue;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height:100vh;
+          margin:0;
+          font-family: sans-serif
+        }
+        .calculator {
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          gap: 20px;
+          padding:15px;
+        }
+        .inputs {
+          display: flex;
+          gap:15px;
+        }
+        input {
+          padding:10px;
+          border-radius: 10px;
+          border:none;
+          width:140px;
+        }
+        .buttons {
+          display: flex;
+          gap: 10px;
+        }
+        button {
+          padding:10px;
+          border: none;
+          border-radius: 5px;
+          background: white;
+          cursor:pointer;
+        }
+      </style>
+    <script src="./assets/Js/script.js"></script>
+</body>
+</html>
