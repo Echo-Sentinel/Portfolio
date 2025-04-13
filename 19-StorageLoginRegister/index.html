@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="navbar">
+        <div>Logo</div>
+        <div class="auth-buttons" id="authArea"></div>
+      </div>
+    
+      <div style="padding: 20px;">
+        <h2>Welcome</h2>
+        <p>This is the main page.</p>
+      </div>
+  
+  <style>
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: #3498db;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .btn {
+      background: white;
+      color: #3498db;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .dropdown-wrapper {
+      position: relative;
+    }
+    .dropdown {
+      position: absolute;
+      top: 38px;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      display: none;
+      flex-direction: column;
+      min-width: 120px;
+      z-index: 10;
+    }
+    .dropdown a {
+      padding: 8px 12px;
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown a:hover {
+      background: #f1f1f1;
+    }
+  </style>
+ <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./assets/JS/script.js"></script>
+  </body>
+</html>
