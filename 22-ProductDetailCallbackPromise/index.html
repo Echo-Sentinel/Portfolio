@@ -1,173 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; margin: 0; }
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-    .navbar .actions {
-      display: flex;
-      gap: 20px;
-    }
-    .navbar button, .navbar a {
-      color: white;
-      background: #3498db;
-      text-decoration: none;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 80px;
-    }
-    .card {
-      background: white;
-      width: 200px;
-      padding: 10px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .wishlist-btn {
-      background: none;
-      border: none;
-      font-size: 20px;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-    .wishlist-btn.active {
-      color: red;
-    }
-  </style>
-</head>
-<body>
-  <div class="products" id="products">
-  </div>
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" type="image/x-icon">
 
-  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script>
-    // Sample products
-    const products = [
-      { id: 1, name: 'Product 1', img: 'https://via.placeholder.com/200x150' },
-      { id: 2, name: 'Product 2', img: 'https://via.placeholder.com/200x150' },
-      { id: 3, name: 'Product 3', img: 'https://via.placeholder.com/200x150' },
-      { id: 4, name: 'Product 4', img: 'https://via.placeholder.com/200x150' },
-      { id: 5, name: 'Product 5', img: 'https://via.placeholder.com/200x150' },
-      { id: 6, name: 'Product 6', img: 'https://via.placeholder.com/200x150' },
-      { id: 7, name: 'Product 7', img: 'https://via.placeholder.com/200x150' },
-      { id: 8, name: 'Product 8', img: 'https://via.placeholder.com/200x150' }
-    ];
-
-    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-
-    // Function to toggle wishlist product
-    function toggleWishlist(productId) {
-      const productIndex = wishlist.findIndex(p => p.id === productId);
-
-      if (productIndex === -1) {
-        // Add product to wishlist
-        const product = products.find(p => p.id === productId);
-        wishlist.push({ ...product, active: true });
-        Toastify({
-          text: `${product.name} added to wishlist`,
-          backgroundColor: '#2ecc71',
-          duration: 3000,
-          close: true,
-          gravity: 'top',
-          position: 'right'
-        }).showToast();
-      } else {
-        // Remove product from wishlist
-        wishlist.splice(productIndex, 1);
-        Toastify({
-          text: `${wishlist[productIndex].name} removed from wishlist`,
-          backgroundColor: '#e74c3c',
-          duration: 3000,
-          close: true,
-          gravity: 'top',
-          position: 'right'
-        }).showToast();
-      }
-
-      // Save updated wishlist to localStorage
-      localStorage.setItem('wishlist', JSON.stringify(wishlist));
-      renderProducts();
-    }
-
-    // Function to render products
-    function renderProducts() {
-      const productsContainer = document.getElementById('products');
-      productsContainer.innerHTML = '';
-
-      products.forEach(product => {
-        const isActive = wishlist.some(p => p.id === product.id);
-
-        const card = document.createElement('div');
-        card.classList.add('card');
-
-        const img = document.createElement('img');
-        img.src = product.img;
-        img.alt = product.name;
-
-        const name = document.createElement('h3');
-        name.textContent = product.name;
-
-        const btn = document.createElement('button');
-        btn.classList.add('wishlist-btn');
-        if (isActive) {
-          btn.classList.add('active');
+    <style>
+        .heart-icon {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: gray;
         }
-        btn.innerHTML = '&#10084;';
-        btn.onclick = () => toggleWishlist(product.id);
 
-        card.appendChild(img);
-        card.appendChild(name);
-        card.appendChild(btn);
+        .heart-icon.active {
+            color: red;
+        }
 
-        productsContainer.appendChild(card);
-      });
-    }
+        .h-300 {
+            height: 300px;
+        }
+    </style>
+</head>
 
-    // Initial render
-    renderProducts();
-  </script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="./index.html">Form</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav" id="authNav"></ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Products</h2>
+        <div class="row" id="productList"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
 </body>
-</html>
-</body>
+
 </html>

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-top: 40px;
+}
+
+.toastify {
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+form input {
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+form button {
+    width: 100%;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+form button:hover {
+    background-color: #0b5ed7;
+}
+
+
+/* basket */
+
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 10px;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.basket-item .image {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.basket-item .title,
+.basket-item .price,
+.basket-item .category {
+    margin: 0;
+    width: 200px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.count-area {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #bda9a9;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.total p,
+.total h4 {
+    margin: 0;
+}
+
+.count {
+    font-size: 20px;
+    margin: 0;
+}
+
+.minus-btn,
+.plus-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+
+.minus-btn:disabled {
+    cursor: not-allowed;
+}
+
+.empty {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.h-300 {
+    height: 300px !important;
+}
