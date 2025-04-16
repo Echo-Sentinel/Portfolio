@@ -1,0 +1,25 @@
+.basket-header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.basket-section {
+    padding-bottom: 50px;
+}
+
+.basket-items .basket-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
