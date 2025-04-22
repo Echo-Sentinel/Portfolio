@@ -1,0 +1,34 @@
+/* HeroSection.module.css */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #212529;
+  color: white;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.primaryBtn {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/*  */
+
+.pagesTitle {
+  font-size: 35px;
+}
