@@ -18,7 +18,7 @@ function App() {
       const res = await axios.get("https://fakestoreapi.com/products");
       setProducts(res.data);
     } catch (error) {
-      toast.error("Məhsullar alınarkən xəta baş verdi!");
+      toast.error("Mehsullar alinarken xeta bas verdi");
     } finally {
       setLoading(false);
     }
@@ -26,24 +26,24 @@ function App() {
 
   const addProduct = (newProduct) => {
     setProducts((prev) => [...prev, newProduct]);
-    toast.success("Məhsul əlavə olundu!");
+    toast.success("Mehsul elave olundu");
   };
 
   const updateProduct = (updatedProduct) => {
     setProducts((prev) =>
       prev.map((p) => (p.id === updatedProduct.id ? updatedProduct : p))
     );
-    toast.success("Məhsul redaktə olundu!");
+    toast.success("Mehsul redakte olundu!");
   };
 
   const deleteProduct = (id) => {
     setProducts((prev) => prev.filter((p) => p.id !== id));
-    toast.success("Məhsul silindi!");
+    toast.success("Mehsul silindi");
   };
 
   const resetProducts = () => {
     setProducts([]);
-    toast.success("Bütün məhsullar sıfırlandı!");
+    toast.success("Butun mehsullar sifirlandi");
   };
 
   return (
