@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "c29b",
+      "fullname": "Jumshud Soltanov",
+      "username": "jumshud",
+      "email": "soltanovc56@gmail.com",
+      "password": "cUMSUD04!",
+      "passwordRepeate": "cUMSUD04!",
+      "isLogin": false
+    }
+  ]
+}
