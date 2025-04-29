@@ -20,7 +20,7 @@ const authSlice = createSlice({
       state.user = action.payload;
       state.isAuthenticated = true;
       localStorage.setItem('user', JSON.stringify(action.payload));
-      toast.success('Giriş uğurludur!');
+      toast.success('Giris ugurludur!');
     },
     logout: (state) => {
       state.user = null;

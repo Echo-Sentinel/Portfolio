@@ -32,7 +32,7 @@ const todoSlice = createSlice({
     },
     deleteAllTodos: (state) => {
       state.todos = [];
-      toast.error('Butun todolar silindi.');
+      toast.error('Butun todolari silindi.');
     },
   },
 });

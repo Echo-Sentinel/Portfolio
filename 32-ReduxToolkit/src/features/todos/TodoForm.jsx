@@ -17,11 +17,11 @@ export default function TodoForm() {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Yeni todo..."
+        placeholder="Yeni todo"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button type="submit">Elave et</button>
+      <button type="submit">Elave ele</button>
     </form>
   );
 }

@@ -10,7 +10,7 @@ export default function TodoItem({ todo }) {
   return (
     <div>
       <span>{todo.text}</span>
-      <button onClick={() => setIsEditing(true)}>Redakte et</button>
+      <button onClick={() => setIsEditing(true)}>Redakte ele</button>
       <button onClick={() => dispatch(deleteTodo(todo.id))}>Sil</button>
 
       {isEditing && (
