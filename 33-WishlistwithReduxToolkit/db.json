@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "testuser",
+      "password": "password"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "A cool product",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Another cool product",
+      "price": 200
+    }
+  ],
+  "wishlists": []
+}
