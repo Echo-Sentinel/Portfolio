@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "testuser",
+      "password": "password"
+    },
+    {
+      "id": "37b1",
+      "username": "nihad",
+      "password": "123455"
+    },
+    {
+      "id": "7e84",
+      "username": "nihad",
+      "password": "12345678"
+    },
+    {
+      "id": "d5a5",
+      "username": "nihad",
+      "password": "654321"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "description": "A cool product",
+      "price": 100
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "description": "Another cool product",
+      "price": 200
+    }
+  ],
+  "wishlists": []
+}
