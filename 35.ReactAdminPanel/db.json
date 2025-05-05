@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "testuser",
+      "password": "password"
+    },
+    {
+      "id": "37b1",
+      "username": "nihad",
+      "password": "123455"
+    },
+    {
+      "id": "7e84",
+      "username": "nihad",
+      "password": "12345678"
+    },
+    {
+      "id": "d5a5",
+      "username": "nihad",
+      "password": "654321"
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Product 2",
+      "description": "Another cool product",
+      "price": 200
+    },
+    {
+      "id": "cb00",
+      "name": "mal",
+      "description": "hello",
+      "price": 40
+    },
+    {
+      "id": "35d4",
+      "name": "tv",
+      "description": "will be good",
+      "price": 50
+    },
+    {
+      "id": "e25f",
+      "name": "nihad",
+      "description": "will be good",
+      "price": 46
+    },
+    {
+      "id": "e381",
+      "name": "hello",
+      "description": "awfew",
+      "price": 343
+    },
+    {
+      "id": "f95f",
+      "name": "nihad",
+      "description": "will be good",
+      "price": 31
+    }
+  ],
+  "wishlists": []
+}
